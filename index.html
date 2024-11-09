@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>YAY! It's BOGO</h2>
+        
+        <!-- 1 Unit Option -->
+        <label class="option">
+            <input type="radio" name="unit" onclick="toggleBox(1)">
+            <div class="option-content">
+                <span>1 Unit</span>
+                <span class="price">$40.00 USD</span>
+            </div>
+            <div id="expandable-box-1" class="expandable-box">
+                <label>Size:
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                </label>
+                <label>Color:
+                    <select>
+                        <option>Black</option>
+                        <option>White</option>
+                        <option>Blue</option>
+                    </select>
+                </label>
+            </div>
+        </label>
+
+        <!-- 2 Unit Option (Expandable) -->
+        <label class="option">
+            <input type="radio" name="unit" onclick="toggleBox(2)">
+            <div class="option-content">
+                <span>2 Unit</span>
+                <span class="price">$58.00 USD</span>
+            </div>
+            <div id="expandable-box-2" class="expandable-box">
+                <label>Size:
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                </label>
+                <label>Color:
+                    <select>
+                        <option>Black</option>
+                        <option>White</option>
+                        <option>Blue</option>
+                    </select>
+                </label>
+            </div>
+        </label>
+
+        <!-- 3 Unit Option -->
+        <label class="option">
+            <input type="radio" name="unit" onclick="toggleBox(3)">
+            <div class="option-content">
+                <span>3 Unit</span>
+                <span class="price">$29.00 USD</span>
+            </div>
+            <div id="expandable-box-3" class="expandable-box">
+                <label>Size:
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                </label>
+                <label>Color:
+                    <select>
+                        <option>Black</option>
+                        <option>White</option>
+                        <option>Blue</option>
+                    </select>
+                </label>
+            </div>
+        </label>
+        
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
